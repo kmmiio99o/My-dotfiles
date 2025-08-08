@@ -1,0 +1,22 @@
+{
+  "context_servers": {
+    "mcp-server-github": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "github_personal_access_token": ""
+      }
+    }
+  },
+  "agent": {
+    "always_allow_tool_actions": true,
+    "default_profile": "write",
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.5-flash"
+    }
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": "Tokyo Midnight"
+}

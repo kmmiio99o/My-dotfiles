@@ -12,27 +12,27 @@ Here's a glimpse of my setup:
 
 This repository contains the following configurations:
 <details>
-    <summary>**Zsh**</summary>
+    <summary><b>Zsh</b></summary>
 - Description: Shell configuration (`.zshrc`) using Oh My Zsh with custom plugins (git, zsh-history-substring-search, zsh-navigation-tools, web-search, copypath, zsh-completions) and aliases. Includes a custom `fresh` command for Kitty terminal.
 </details>
 
 <details>
-    <summary>**Kitty**</summary>
+    <summary><b>Kitty</b></summary>
 - Description: Terminal emulator settings (`.config/kitty/kitty.conf`) with the Nord theme, JetBrainsMono Nerd Font, custom keybindings, and UI enhancements. Additional themes are located in `.config/kitty/kitty-themes/themes/`.
 </details>
 
 <details>
-    <summary>**Neofetch**</summary>
+    <summary><b>Neofetch</b></summary>
 - Description: System information display configuration (`.config/neofetch/config.conf`) with custom info and colors. The image backend is set to Kitty, displaying a random image from the waifu directory.
 </details>
 
 <details>
-    <summary>**Neovim**</summary>
+    <summary><b>Neovim</b></summary>
 - Description: Code editor configuration (`.config/nvim/`) using LazyVim with lazy.nvim, language server support (pyright, tsserver), Codeium, Copilot, yanky, gitsigns, and various UI enhancements. Includes treesitter parsers for multiple languages. (I don't have idea how to make to this one own dot file, so I use clean nvim)
 </details>
 
 <details>
-    <summary>**Zed**</summary>
+    <summary><b>Zed</b></summary>
 - Description: Code editor configuration (`.config/zed/`) with custom keybindings (`keymap.json`), settings (`settings.json`), and the Tokyo Midnight theme (`themes/Tokyo Midnight.json`).
 </details>
 
@@ -70,5 +70,3 @@ To set up these dotfiles:
 - [Neofetch](https://github.com/dylanaraps/neofetch)
 - [LazyVim](https://www.lazyvim.org/)
 - [Zed](https://zed.dev/)
-
-Enjoy!
