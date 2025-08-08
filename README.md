@@ -1,51 +1,43 @@
 # My Dotfiles
 
-These are my personal dotfiles for customizing my development environment. It includes configurations for Zsh, Kitty, Neofetch, Neovim, and Zed, tailored for a productive and aesthetically pleasing experience.
+These are my personal dotfiles for creating a customized and efficient development environment. These configurations are tailored to my specific needs and preferences.
 
 ## Preview
 
 Here's a glimpse of my setup:
 
-<img src="images/preview.png" width="1000" />
+<img src="images/preview.png" width="1000">
 
 ## Configurations
 
-This repository contains the following configurations:
-<details>
-    <summary><b>Zsh</b></summary>
-- Description: Shell configuration (`.zshrc`) using Oh My Zsh with custom plugins (git, zsh-history-substring-search, zsh-navigation-tools, web-search, copypath, zsh-completions) and aliases. Includes a custom `fresh` command for Kitty terminal.
-</details>
-
-<details>
-    <summary><b>Kitty</b></summary>
-- Description: Terminal emulator settings (`.config/kitty/kitty.conf`) with the Nord theme, JetBrainsMono Nerd Font, custom keybindings, and UI enhancements. Additional themes are located in `.config/kitty/kitty-themes/themes/`.
-</details>
-
-<details>
-    <summary><b>Neofetch</b></summary>
-- Description: System information display configuration (`.config/neofetch/config.conf`) with custom info and colors. The image backend is set to Kitty, displaying a random image from the waifu directory.
-</details>
-
-<details>
-    <summary><b>Neovim</b></summary>
-- Description: Code editor configuration (`.config/nvim/`) using LazyVim with lazy.nvim, language server support (pyright, tsserver), Codeium, Copilot, yanky, gitsigns, and various UI enhancements. Includes treesitter parsers for multiple languages. (I don't have idea how to make to this one own dot file, so I use clean nvim)
-</details>
-
-<details>
-    <summary><b>Zed</b></summary>
-- Description: Code editor configuration (`.config/zed/`) with custom keybindings (`keymap.json`), settings (`settings.json`), and the Tokyo Midnight theme (`themes/Tokyo Midnight.json`).
-</details>
+-   **Zsh**: Shell configuration with Oh-My-Zsh and custom plugins for enhanced productivity, including git, zsh-history-substring-search, and more. Aliases and functions are defined for common tasks. **Includes a custom `fresh` function for Kitty terminal.**
+-   **Kitty**: Terminal emulator settings located in `.config/kitty/kitty.conf` with the Nord theme, font customizations, and keybindings for a streamlined terminal experience. **Additional themes are located in `.config/kitty/kitty-themes/themes/.**`
+-   **Neofetch**: System information display customized with a unique aesthetic, showcasing system details in a visually appealing way. **The image backend is set to Kitty, displaying a random image from the waifu directory.**
+-   **Neovim**: Code editor configuration managed with LazyVim, providing a rich set of plugins and settings for coding in various languages. This includes support for LSP, autocompletion, and syntax highlighting. **Includes treesitter parsers for multiple languages.**
+-   **Zed**: Code editor configuration located in `.config/zed/` for a modern and collaborative coding experience. **Provides custom keybindings, settings, and the Tokyo Midnight theme.**
 
 ## Installation
 
-To set up these dotfiles:
+There are two ways to install these dotfiles: automatic and manual.
+
+### Automatic Installation
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/kmmiio99o/My-dotfiles.git
+    git clone https://github.com/kmmiio99o/My-dotfiles.git ~/My-dotfiles
+    cd ~/My-dotfiles
+    ./install.sh
+    ```
+    The script will ask if you want to back up your existing dotfiles before installing. (if script is not running, try `chmod +x install.sh`)
+
+### Manual Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/kmmiio99o/My-dotfiles.git ~/My-dotfiles
     ```
 
-2.  Backup existing configurations. (Not needed but preferred)
+2.  Backup existing configurations: Manually back up your existing dotfiles to a safe location.
 
 3.  Create symbolic links:
     ```bash
@@ -56,17 +48,16 @@ To set up these dotfiles:
     ln -s ~/My-dotfiles/.config/zed ~/.config/zed
     ```
 
-4.  Install dependencies (Zsh, Oh My Zsh, Kitty, Neofetch, Neovim, Zed, plugins, language servers).
+4.  Install dependencies: Ensure you have the necessary applications and their dependencies installed (Zsh, Oh My Zsh, Kitty, Neofetch, Neovim, Zed, plugins, language servers).
 
-5.  Restart the shell and applications. Or type in terminal:
-    ```bash
-    source ~/.zshrc
-    ```
+5.  Restart the shell and applications.
 
 ## Credits
 
-- [Oh My Zsh](https://ohmyz.sh/)
-- [Kitty](https://sw.kovidgoyal.net/kitty/)
-- [Neofetch](https://github.com/dylanaraps/neofetch)
-- [LazyVim](https://www.lazyvim.org/)
-- [Zed](https://zed.dev/)
+-   [Oh My Zsh](https://ohmyz.sh/)
+-   [Kitty](https://sw.kovidgoyal.net/kitty/)
+-   [Neofetch](https://github.com/dylanaraps/neofetch)
+-   [LazyVim](https://www.lazyvim.org/)
+-   [Zed](https://zed.dev/)
+
+Feel free to explore and adapt these dotfiles to your own needs. Contributions and suggestions are welcome!
